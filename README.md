@@ -1,15 +1,25 @@
 # Centos-linux-yumrepo
 yum-localrepos-seting  
 查看仓库  
-```yum repolist ```
+```
+yum repolist
+```
 进入yum仓库配置区  
-```cd /etc/yum.repos.d/  ```
+```
+cd /etc/yum.repos.d/
+```
 查看仓库文件  
-```ls  ```
+```
+ls
+```
 创建备份文件夹  
-```mkdir backup/ ```
+```
+mkdir backup/
+```
 将其所有原配置文件放入backyup目录进行备份  
-```mv Centos-* backup/```
+```
+mv Centos-* backup/
+```
 创建本地源文件并编辑
 ```
 touch local.repo  
@@ -37,6 +47,10 @@ vim /etc/fstab
   /dev/cdrom  /media/cdrom  iso9660  defaults  0 0  
 ```
 查看仓库
-```yum repolist  ```
+```
+yum repolist
+```
 通过yum仓库进行httpd下载
-```yum install httpd  ```
+```
+yum install httpd
+```
