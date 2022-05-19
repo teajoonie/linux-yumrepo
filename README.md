@@ -1,14 +1,14 @@
 # Centos-linux-yumrepo
 yum-localrepos-seting  
-查看仓库
+查看仓库  
 ```yum repolist ```
-进入yum仓库配置区
+进入yum仓库配置区  
 ```cd /etc/yum.repos.d/  ```
-查看仓库文件
+查看仓库文件  
 ```ls  ```
-创建备份文件夹
+创建备份文件夹  
 ```mkdir backup/ ```
-将其所有原配置文件放入backyup目录进行备份
+将其所有原配置文件放入backyup目录进行备份  
 ```mv Centos-* backup/```
 创建本地源文件并编辑
 ```
@@ -27,7 +27,9 @@ mkdir -p /media/cdrom
 mount /dev/cdrom /media/cdrom  
 ```
 查看挂载
-`df -h  `
+```
+df -h
+```
 设置其挂载开机自动挂载
 ```
 vim /etc/fstab  
