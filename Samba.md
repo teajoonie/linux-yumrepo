@@ -1,4 +1,4 @@
-#服务端的samba配置
+# 服务端的samba配置
 查看Linux是否安装了Samba
 ```
 rpm -qa | grep samba
