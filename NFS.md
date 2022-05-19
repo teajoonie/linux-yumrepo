@@ -67,4 +67,7 @@ mkdir /data/share
 挂载服务端共享文件目录到本地挂载目录
 ```
 mount -t nfs 服务端IP:/data/share /data/share
+
+ls /data/share
 ```
+
