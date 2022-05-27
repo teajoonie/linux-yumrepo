@@ -45,3 +45,25 @@ mount //Samba服务端IP/共享资源名称 /data/share -o username=testuser,pas
 ```
 umount /data/share
 ```
+
+匿名访问
+```
+[yup]
+comment = hahaha
+path = /yup
+guest ok = yes
+browseable = yes
+writeable = yes
+printable = no
+:wq
+```
+重启smb服务使配置生效
+```
+systemctl restart smb
+systemctl enable smb
+```
+开启防火墙对smb服务的流量通过
+```
+firewall-cmd --permanent --zone=public --add-service=samba
+firewall-cmd --reload
+```
